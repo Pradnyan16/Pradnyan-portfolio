@@ -44,10 +44,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="w-full bg-[#000000] text-white py-24 border-b border-white/10">
+    <section id="projects" className="w-full bg-transparent text-black dark:text-white py-24 border-b border-black/10 dark:border-white/10">
       <div className="w-full flex flex-col xl:flex-row">
         {/* Section Header */}
-        <div className="w-full xl:w-1/3 px-6 md:px-12 xl:border-r border-white/10 pb-12 xl:pb-0 relative">
+        <div className="w-full xl:w-1/3 px-6 md:px-12 xl:border-r border-black/10 dark:border-white/10 pb-12 xl:pb-0 relative">
            <motion.div
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -64,7 +64,7 @@ export default function Projects() {
         </div>
 
         {/* Projects List */}
-        <div className="w-full xl:w-2/3 flex flex-col border-t xl:border-t-0 border-white/10">
+        <div className="w-full xl:w-2/3 flex flex-col border-t xl:border-t-0 border-black/10 dark:border-white/10">
           {projects.map((project, index) => (
             <Link key={project.title} href={project.link} className="block group">
               <motion.div
@@ -72,26 +72,26 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex flex-col md:flex-row w-full border-b border-white/10 last:border-b-0 p-8 md:p-12 hover:bg-white/5 transition-colors cursor-crosshair items-start md:items-center relative overflow-hidden"
+                className="flex flex-col md:flex-row w-full border-b border-black/10 dark:border-white/10 last:border-b-0 p-8 md:p-12 hover:bg-black/5 dark:hover:bg-white/5 transition-colors cursor-crosshair items-start md:items-center relative overflow-hidden"
               >
                 <div className="w-full md:w-1/2 flex flex-col gap-4 mb-6 md:mb-0 shrink-0 z-10">
                   <div className="flex gap-2 flex-wrap">
                      {project.tags.map(tag => (
-                       <span key={tag} className="font-mono text-[10px] uppercase tracking-widest text-zinc-500 border border-white/10 px-2 py-1 group-hover:border-white/30 transition-colors bg-black group-hover:bg-transparent">
+                       <span key={tag} className="font-mono text-[10px] uppercase tracking-widest text-zinc-500 border border-black/10 dark:border-white/10 px-2 py-1 group-hover:border-black/30 dark:group-hover:border-white/30 transition-colors bg-black group-hover:bg-transparent">
                          {tag}
                        </span>
                      ))}
                   </div>
-                  <h3 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-zinc-300 group-hover:text-white transition-colors">
+                  <h3 className="text-2xl md:text-4xl font-black uppercase tracking-tighter text-zinc-700 dark:text-zinc-300 group-hover:text-black dark:group-hover:text-white transition-colors">
                     {project.title}
                   </h3>
                 </div>
                 
-                <div className="w-full md:w-1/2 flex items-center md:pl-12 md:border-l border-white/10 z-10 justify-between">
-                  <p className="text-zinc-400 font-mono text-sm leading-relaxed pr-8">
+                <div className="w-full md:w-1/2 flex items-center md:pl-12 md:border-l border-black/10 dark:border-white/10 z-10 justify-between">
+                  <p className="text-zinc-600 dark:text-zinc-400 font-mono text-sm leading-relaxed pr-8">
                     {project.description}
                   </p>
-                  <ArrowUpRight className="h-6 w-6 text-zinc-600 group-hover:text-white transition-colors shrink-0" />
+                  <ArrowUpRight className="h-6 w-6 text-zinc-600 group-hover:text-black dark:group-hover:text-white transition-colors shrink-0" />
                 </div>
 
                 {/* Image Reveal removed per user request */}

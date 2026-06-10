@@ -53,10 +53,10 @@ const feedbacks = [
 
 export default function Feedback() {
   return (
-    <section id="feedback" className="w-full bg-[#000000] text-white py-24 border-b border-white/10">
+    <section id="feedback" className="w-full bg-transparent text-black dark:text-white py-24 border-b border-black/10 dark:border-white/10">
       <div className="w-full flex flex-col xl:flex-row">
         {/* Section Header */}
-        <div className="w-full xl:w-1/3 px-6 md:px-12 xl:border-r border-white/10 pb-12 xl:pb-0 relative">
+        <div className="w-full xl:w-1/3 px-6 md:px-12 xl:border-r border-black/10 dark:border-white/10 pb-12 xl:pb-0 relative">
            <motion.div
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -73,7 +73,7 @@ export default function Feedback() {
         </div>
 
         {/* Feedback Grid */}
-        <div className="w-full md:w-2/3 border-t md:border-t-0 border-white/10">
+        <div className="w-full md:w-2/3 border-t md:border-t-0 border-black/10 dark:border-white/10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {feedbacks.map((item, index) => (
               <motion.div
@@ -82,21 +82,21 @@ export default function Feedback() {
                 whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="flex flex-col p-8 border-b border-r border-white/10 hover:bg-white/5 transition-colors group cursor-crosshair"
+                className="flex flex-col p-8 border-b border-r border-black/10 dark:border-white/10 hover:bg-black/5 dark:hover:bg-white/5 transition-colors group cursor-crosshair"
               >
                 <div className="flex items-center justify-between mb-8">
                   <div className="flex items-center gap-4">
-                    <div className="h-10 w-10 bg-zinc-900 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-white group-hover:text-black transition-colors">
+                    <div className="h-10 w-10 bg-zinc-900 border border-black/10 dark:border-white/10 flex items-center justify-center shrink-0 group-hover:bg-white group-hover:text-black transition-colors">
                       <span className="font-bold text-lg uppercase">{item.name[0]}</span>
                     </div>
                     <div className="flex flex-col">
-                      <span className="font-bold uppercase text-xs md:text-sm text-zinc-200 group-hover:text-white transition-colors">{item.name}</span>
+                      <span className="font-bold uppercase text-xs md:text-sm text-zinc-200 group-hover:text-black dark:group-hover:text-white transition-colors">{item.name}</span>
                       <span className="font-mono text-[10px] uppercase text-zinc-500 tracking-widest">{item.role}</span>
                     </div>
                   </div>
                   <Quote className="h-4 w-4 text-zinc-600 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-xs md:text-sm font-bold uppercase leading-relaxed text-zinc-400 group-hover:text-zinc-200 transition-colors">
+                <p className="text-xs md:text-sm font-bold uppercase leading-relaxed text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-200 transition-colors">
                   "{item.quote}"
                 </p>
               </motion.div>

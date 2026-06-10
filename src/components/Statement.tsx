@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Statement() {
   return (
-    <section className="w-full bg-[#000000] text-white py-32 md:py-48 border-b border-white/10 flex items-center justify-center px-6 md:px-12 relative overflow-hidden">
+    <section className="w-full bg-transparent text-black dark:text-white py-32 md:py-48 border-b border-black/10 dark:border-white/10 flex items-center justify-center px-6 md:px-12 relative overflow-hidden">
       {/* Background Subtle Grid or Texture could go here */}
       
       <motion.div
@@ -14,7 +14,7 @@ export default function Statement() {
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         className="max-w-6xl mx-auto flex flex-col items-center text-center"
       >
-        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-black uppercase tracking-tighter leading-[1.1] text-white mb-12">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-black uppercase tracking-tighter leading-[1.1] text-black dark:text-white mb-12">
           A COMPUTER TECHNOLOGY STUDENT DRIVEN BY AI, INNOVATION, AND CONTINUOUS GROWTH. I DESIGN AND BUILD DIGITAL SOLUTIONS THAT COMBINE TECHNOLOGY, CREATIVITY, AND REAL-WORLD IMPACT.
         </h2>
         

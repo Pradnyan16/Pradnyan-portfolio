@@ -27,10 +27,10 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="w-full bg-[#000000] text-white py-24 border-b border-white/10">
+    <section id="services" className="w-full bg-transparent text-black dark:text-white py-24 border-b border-black/10 dark:border-white/10">
       <div className="w-full flex flex-col xl:flex-row">
         {/* Section Header */}
-        <div className="w-full xl:w-1/3 px-6 md:px-12 xl:border-r border-white/10 pb-12 xl:pb-0 relative">
+        <div className="w-full xl:w-1/3 px-6 md:px-12 xl:border-r border-black/10 dark:border-white/10 pb-12 xl:pb-0 relative">
            <motion.div
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -47,7 +47,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="w-full xl:w-2/3 flex flex-col border-t xl:border-t-0 border-white/10">
+        <div className="w-full xl:w-2/3 flex flex-col border-t xl:border-t-0 border-black/10 dark:border-white/10">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -55,16 +55,16 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex flex-col md:flex-row w-full border-b border-white/10 last:border-b-0 p-8 md:p-12 hover:bg-white/5 transition-colors group cursor-crosshair"
+              className="flex flex-col md:flex-row w-full border-b border-black/10 dark:border-white/10 last:border-b-0 p-8 md:p-12 hover:bg-black/5 dark:hover:bg-white/5 transition-colors group cursor-crosshair"
             >
               <div className="font-mono text-xs text-zinc-500 w-16 shrink-0 mb-4 md:mb-0">
                 [{service.number}]
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight mb-4 text-zinc-300 group-hover:text-white transition-colors">
+                <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-tight mb-4 text-zinc-700 dark:text-zinc-300 group-hover:text-black dark:group-hover:text-white transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-sm text-zinc-400 font-mono leading-relaxed max-w-lg">
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed max-w-lg">
                   {service.description}
                 </p>
               </div>

@@ -32,10 +32,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="mb-16 flex flex-col items-center text-center"
         >
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-black dark:text-white mb-4">
             Client Testimonials
           </h2>
-          <p className="text-lg text-zinc-400 max-w-2xl">
+          <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl">
             Don't just take my word for it. Here's what people I've worked with have to say.
           </p>
         </motion.div>
@@ -51,15 +51,15 @@ export default function Testimonials() {
               className="p-8 rounded-3xl border border-zinc-800 bg-zinc-900/40 relative"
             >
               <Quote className="absolute top-8 right-8 h-8 w-8 text-zinc-800" />
-              <p className="text-zinc-300 leading-relaxed mb-8 relative z-10 text-lg">
+              <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed mb-8 relative z-10 text-lg">
                 "{testimonial.content}"
               </p>
               <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-zinc-800 flex items-center justify-center font-bold text-zinc-400">
+                <div className="h-12 w-12 rounded-full bg-zinc-800 flex items-center justify-center font-bold text-zinc-600 dark:text-zinc-400">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white">{testimonial.name}</h4>
+                  <h4 className="font-semibold text-black dark:text-white">{testimonial.name}</h4>
                   <p className="text-sm text-zinc-500">{testimonial.role}</p>
                 </div>
               </div>

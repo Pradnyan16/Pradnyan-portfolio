@@ -14,7 +14,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#000000]">
+    <main className="flex min-h-screen flex-col bg-transparent">
       <Navbar />
       <Hero />
       <About />

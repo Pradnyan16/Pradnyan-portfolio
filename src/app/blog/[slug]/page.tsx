@@ -25,17 +25,17 @@ export default async function BlogPostPage({
   }
 
   return (
-    <article className="min-h-screen bg-[#000000] text-white selection:bg-white selection:text-black pt-24 px-6 md:px-12 pb-24">
+    <article className="min-h-screen bg-transparent text-black dark:text-white selection:bg-white selection:text-black pt-24 px-6 md:px-12 pb-24">
       <div className="max-w-3xl mx-auto">
         <Link 
           href="/blog" 
-          className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-12 font-mono text-xs uppercase tracking-widest"
+          className="inline-flex items-center gap-2 text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors mb-12 font-mono text-xs uppercase tracking-widest"
         >
           <ArrowLeft size={14} />
           Back to Blog
         </Link>
         
-        <div className="mb-12 border-b border-white/10 pb-12">
+        <div className="mb-12 border-b border-black/10 dark:border-white/10 pb-12">
           <div className="flex flex-wrap items-center gap-4 text-xs text-zinc-500 font-mono mb-6">
             <span className="flex items-center gap-1">
               <Calendar size={14} />
@@ -48,7 +48,7 @@ export default async function BlogPostPage({
             <span className="hidden sm:inline">::</span>
             <div className="flex gap-2">
               {post.meta.tags.map(tag => (
-                <span key={tag} className="flex items-center gap-1 bg-white/5 px-2 py-1 uppercase tracking-wider text-[10px]">
+                <span key={tag} className="flex items-center gap-1 bg-black/5 dark:bg-white/5 px-2 py-1 uppercase tracking-wider text-[10px]">
                   <Tag size={10} />
                   {tag}
                 </span>
@@ -60,7 +60,7 @@ export default async function BlogPostPage({
             {post.meta.title}
           </h1>
           
-          <p className="text-xl text-zinc-400 font-medium leading-relaxed">
+          <p className="text-xl text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed">
             {post.meta.excerpt}
           </p>
         </div>

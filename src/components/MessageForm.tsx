@@ -5,11 +5,11 @@ import { Send } from "lucide-react";
 
 export default function MessageForm() {
   return (
-    <section id="message" className="w-full bg-[#000000] text-white py-24 border-t border-white/10">
-      <div className="w-full flex flex-col xl:flex-row border-b border-white/10 pb-24">
+    <section id="message" className="w-full bg-transparent text-black dark:text-white py-24 border-t border-black/10 dark:border-white/10">
+      <div className="w-full flex flex-col xl:flex-row border-b border-black/10 dark:border-white/10 pb-24">
         
         {/* Left Side Header */}
-        <div className="w-full xl:w-1/3 px-6 md:px-12 xl:border-r border-white/10 pb-12 xl:pb-0 relative">
+        <div className="w-full xl:w-1/3 px-6 md:px-12 xl:border-r border-black/10 dark:border-white/10 pb-12 xl:pb-0 relative">
            <motion.div
             initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -47,29 +47,29 @@ export default function MessageForm() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex flex-col gap-3">
-                <label className="font-mono text-xs text-zinc-400 uppercase tracking-widest">Name</label>
-                <input name="name" type="text" placeholder="Your name" className="w-full bg-transparent border border-white/10 p-4 text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm" required />
+                <label className="font-mono text-xs text-zinc-600 dark:text-zinc-400 uppercase tracking-widest">Name</label>
+                <input name="name" type="text" placeholder="Your name" className="w-full bg-transparent border border-black/10 dark:border-white/10 p-4 text-black dark:text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm" required />
               </div>
               <div className="flex flex-col gap-3">
-                <label className="font-mono text-xs text-zinc-400 uppercase tracking-widest">Email</label>
-                <input name="email" type="email" placeholder="your.email@example.com" className="w-full bg-transparent border border-white/10 p-4 text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm" required />
+                <label className="font-mono text-xs text-zinc-600 dark:text-zinc-400 uppercase tracking-widest">Email</label>
+                <input name="email" type="email" placeholder="your.email@example.com" className="w-full bg-transparent border border-black/10 dark:border-white/10 p-4 text-black dark:text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm" required />
               </div>
             </div>
 
             <div className="flex flex-col gap-3">
-              <label className="font-mono text-xs text-zinc-400 uppercase tracking-widest">Subject</label>
-              <input name="subject" type="text" placeholder="What's this about?" className="w-full bg-transparent border border-white/10 p-4 text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm" required />
+              <label className="font-mono text-xs text-zinc-600 dark:text-zinc-400 uppercase tracking-widest">Subject</label>
+              <input name="subject" type="text" placeholder="What's this about?" className="w-full bg-transparent border border-black/10 dark:border-white/10 p-4 text-black dark:text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm" required />
             </div>
 
             <div className="flex flex-col gap-3">
-              <label className="font-mono text-xs text-zinc-400 uppercase tracking-widest">Message</label>
-              <textarea name="message" placeholder="Your message..." rows={6} className="w-full bg-transparent border border-white/10 p-4 text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm resize-none" required></textarea>
+              <label className="font-mono text-xs text-zinc-600 dark:text-zinc-400 uppercase tracking-widest">Message</label>
+              <textarea name="message" placeholder="Your message..." rows={6} className="w-full bg-transparent border border-black/10 dark:border-white/10 p-4 text-black dark:text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm resize-none" required></textarea>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full">
               <button 
                 type="submit" 
-                className="flex items-center justify-center gap-4 bg-white text-black py-5 px-8 font-bold uppercase tracking-widest hover:bg-zinc-300 transition-colors cursor-crosshair group flex-1"
+                className="flex items-center justify-center gap-4 bg-black dark:bg-white text-white dark:text-black py-5 px-8 font-bold uppercase tracking-widest hover:bg-zinc-300 transition-colors cursor-crosshair group flex-1"
               >
                 <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform shrink-0" />
                 Via WhatsApp
@@ -93,7 +93,7 @@ export default function MessageForm() {
                   const body = `Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
                   window.open(`mailto:pradnyanw2@gmail.com?subject=${encodeURIComponent(subject as string)}&body=${body}`);
                 }}
-                className="flex items-center justify-center gap-4 bg-transparent border border-white text-white py-5 px-8 font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors cursor-crosshair group flex-1"
+                className="flex items-center justify-center gap-4 bg-transparent border border-black dark:border-white text-black dark:text-white py-5 px-8 font-bold uppercase tracking-widest hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors cursor-crosshair group flex-1"
               >
                 <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform shrink-0" />
                 Via Email

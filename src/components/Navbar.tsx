@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
   const [time, setTime] = useState("");
@@ -36,10 +37,11 @@ export default function Navbar() {
         <Link href="/#contact" className="hover:text-white transition-colors">CONTACT</Link>
       </div>
 
-      <div className="flex-1 flex justify-end">
+      <div className="flex-1 flex justify-end items-center gap-4">
+        <ThemeToggle />
         <Link 
           href="#contact" 
-          className="border border-white hover:bg-white hover:text-black transition-colors rounded-full px-6 py-2 text-white font-medium tracking-widest text-xs md:text-sm"
+          className="border border-black dark:border-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors rounded-full px-6 py-2 text-black dark:text-white font-medium tracking-widest text-xs md:text-sm"
         >
           CONTACT NOW
         </Link>
