@@ -31,7 +31,9 @@ export default function Navbar() {
 
       <div className="hidden md:flex flex-1 justify-center gap-8 text-zinc-500">
         <Link href="/" className="hover:text-white transition-colors">HOME</Link>
+        <Link href="/#projects" className="hover:text-white transition-colors">PROJECTS</Link>
         <Link href="/blog" className="hover:text-white transition-colors">BLOG</Link>
+        <Link href="/#contact" className="hover:text-white transition-colors">CONTACT</Link>
       </div>
 
       <div className="flex-1 flex justify-end">
