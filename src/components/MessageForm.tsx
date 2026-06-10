@@ -58,7 +58,7 @@ export default function MessageForm() {
 
             <div className="flex flex-col gap-3">
               <label className="font-mono text-xs text-zinc-600 dark:text-zinc-400 uppercase tracking-widest">Subject</label>
-              <input name="subject" type="text" placeholder="What's this about?" className="w-full bg-transparent border border-black/10 dark:border-white/10 p-4 text-black dark:text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm" required />
+              <input name="subject" type="text" placeholder="What&apos;s this about?" className="w-full bg-transparent border border-black/10 dark:border-white/10 p-4 text-black dark:text-white placeholder:text-zinc-700 focus:outline-none focus:border-white/40 transition-colors cursor-crosshair font-mono text-sm" required />
             </div>
 
             <div className="flex flex-col gap-3">

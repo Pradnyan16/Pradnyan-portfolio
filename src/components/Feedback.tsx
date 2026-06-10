@@ -97,7 +97,7 @@ export default function Feedback() {
                   <Quote className="h-4 w-4 text-zinc-600 opacity-50 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <p className="text-xs md:text-sm font-bold uppercase leading-relaxed text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-200 transition-colors">
-                  "{item.quote}"
+                  &quot;{item.quote}&quot;
                 </p>
               </motion.div>
             ))}

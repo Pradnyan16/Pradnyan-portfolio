@@ -36,7 +36,7 @@ export default function Testimonials() {
             Client Testimonials
           </h2>
           <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl">
-            Don't just take my word for it. Here's what people I've worked with have to say.
+            Don&apos;t just take my word for it. Here's what people I've worked with have to say.
           </p>
         </motion.div>
 

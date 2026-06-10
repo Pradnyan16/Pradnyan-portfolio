@@ -20,7 +20,7 @@ export default async function BlogPostPage({
   let post;
   try {
     post = getPostBySlug(resolvedParams.slug);
-  } catch (error) {
+  } catch (error: any) {
     notFound();
   }
 

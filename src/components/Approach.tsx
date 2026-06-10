@@ -27,7 +27,7 @@ export default function Approach() {
       {/* Top Labels */}
       <div className="absolute top-8 left-6 md:left-12 right-6 md:right-12 flex justify-between items-center font-mono text-[10px] uppercase tracking-widest text-zinc-500">
         <span>02</span>
-        <span>// Approach</span>
+        <span>{`//`} Approach</span>
         <span className="hidden md:block">Three Phases</span>
       </div>
 
