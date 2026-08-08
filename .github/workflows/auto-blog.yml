@@ -1,9 +1,6 @@
 name: Auto-Generate Blog Posts
 
 on:
-  schedule:
-    # Runs at 08:00 UTC on Mon, Wed, and Fri
-    - cron: '0 8 * * 1,3,5'
   workflow_dispatch: # Allows manual triggering from the GitHub Actions UI
 
 jobs:
