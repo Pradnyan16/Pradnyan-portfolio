@@ -34,7 +34,7 @@ A minimalist, high-performance developer portfolio built to showcase engineering
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [https://pradnyan.xyz](https://pradnyan.xyz) in your browser.
 
 ## Customization
 To customize this portfolio for your own use:
