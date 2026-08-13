@@ -33,19 +33,19 @@ export default function About() {
             className="prose prose-invert max-w-none"
            >
              <p className="text-xl md:text-3xl font-medium leading-relaxed text-zinc-700 dark:text-zinc-300">
-               Computer Technology undergraduate with interests in Full-Stack Development, Data Analytics, AI/ML, and UI/UX Design.
+               I build high-performance web applications and intelligent data systems. My focus bridges the gap between clean engineering and exceptional user experience.
              </p>
              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-black/10 dark:border-white/10 pt-8">
                <div>
-                 <h3 className="font-mono text-xs uppercase tracking-widest text-zinc-500 mb-4">Technical Foundation</h3>
+                 <h3 className="font-mono text-xs uppercase tracking-widest text-zinc-500 mb-4">Technical Arsenal</h3>
                  <p className="text-zinc-600 dark:text-zinc-400 font-mono text-sm leading-relaxed">
-                   Skilled in Python, JavaScript, MySQL, Figma, and modern development tools. Experienced in building machine learning applications, designing user-centric interfaces, and developing practical solutions for real-world problems.
+                   Expertise in Next.js, TypeScript, and Python. I design robust full-stack architectures, integrate machine learning models, and craft pixel-perfect interfaces that scale.
                  </p>
                </div>
                <div>
-                 <h3 className="font-mono text-xs uppercase tracking-widest text-zinc-500 mb-4">Core Approach</h3>
+                 <h3 className="font-mono text-xs uppercase tracking-widest text-zinc-500 mb-4">Core Philosophy</h3>
                  <p className="text-zinc-600 dark:text-zinc-400 font-mono text-sm leading-relaxed">
-                   Strong analytical, problem-solving, and collaboration skills. I bring a passion for technology and innovation to every project, focusing on clean architecture and beautiful design.
+                   I believe in writing code that is as beautiful under the hood as the interfaces it powers. I thrive on solving complex technical challenges with elegant, user-centric solutions.
                  </p>
                </div>
              </div>
